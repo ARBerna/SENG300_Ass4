@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.Queue;
+import java.util.LinkedList;
 
 public class Test
 {
@@ -52,6 +54,32 @@ public class Test
                     System.out.println("Top: " + cs2.top());
                     System.out.println("Pop: " + cs2.pop());
                     System.out.println("Pop: " + cs2.pop());
+                    isRunning = false;
+                    break;
+                case 5:
+                    System.out.print("Enter a word: ");
+                    String word = sc.nextLine();
+                    System.out.println("Palindrome? " + Task5.isPalindrome(word));
+                    isRunning = false;
+                    break;
+                case 6:
+                    Task6 q = new Task6(5);
+                    q.enqueue(10);
+                    q.enqueue(20);
+                    q.enqueue(30);
+                    System.out.println("Dequeued: " + q.dequeue());
+                    System.out.println("Dequeued: " + q.dequeue());
+                    isRunning = false;
+                    break;
+                case 7:
+                    Queue<Integer> q2 = new LinkedList<>();
+                    q2.add(1);
+                    q2.add(2);
+                    q2.add(3);
+                    q2.add(4);
+                    System.out.println("Original queue: " + q2);
+                    Task7.reverse(q2);
+                    System.out.println("Reversed queue: " + q2);
                     isRunning = false;
                     break;
                 default:

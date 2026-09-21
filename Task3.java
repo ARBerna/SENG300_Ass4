@@ -37,6 +37,6 @@ public class Task3
 
     public boolean isEmpty()
     {
-        return top == 1;
+        return top == -1;
     }
 }
