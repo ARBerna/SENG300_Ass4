@@ -34,6 +34,16 @@ public class Test
                     Task2.run();
                     isRunning = false;
                     break;
+                case 3:
+                    Task3 cs = new Task3();
+                    cs.push('A');
+                    cs.push('B');
+                    cs.push('C');
+                    System.out.println("Top: " + cs.top());
+                    System.out.println("Pop: " + cs.pop());
+                    System.out.println("Pop: " + cs.pop());
+                    isRunning = false;
+                    break;
                 default:
                     System.out.println("That is not an option, try again.");
             }
