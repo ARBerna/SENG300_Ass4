@@ -82,6 +82,16 @@ public class Test
                     System.out.println("Reversed queue: " + q2);
                     isRunning = false;
                     break;
+                case 8:
+                    System.out.print("Enter a number: ");
+                    int n = sc.nextInt();
+                    System.out.println("Digit list: " + Task8.convert(n));
+                    isRunning = false;
+                    break;
+                case 9:
+                    System.out.println("Goodbye!");
+                    isRunning = false;
+                    break;
                 default:
                     System.out.println("That is not an option, try again.");
             }
