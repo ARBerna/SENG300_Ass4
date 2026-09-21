@@ -30,6 +30,10 @@ public class Test
                     Task1.run();
                     isRunning = false;
                     break;
+                case 2:
+                    Task2.run();
+                    isRunning = false;
+                    break;
                 default:
                     System.out.println("That is not an option, try again.");
             }
